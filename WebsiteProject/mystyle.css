@@ -17,9 +17,10 @@ nav ul{
 }
 li a {
     text-decoration: none;
+    font-family: "Black Ops One", system-ui;
     color: black;
-    font-weight: bold;
-    font-size: 18px;
+    font-weight: 200px;
+    font-size: normal;
 }
 h1 {
     color: #ecf1ce;
