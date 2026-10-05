@@ -1,0 +1,32 @@
+body {
+    background-color: #222222;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    justify-content: space-around;
+    border-radius: 25px;
+    background-color: #ecf1ce;
+    padding: 20px;
+    width: 96%;
+    height: 20px;
+}
+li a {
+    text-decoration: none;
+    font-family: "Black Ops One", system-ui;
+    color: black;
+    font-weight: 200px;
+    font-size: normal;
+}
+h1 {
+    color: #ecf1ce;
+    text-align: center;
+    font-family: "Black Ops One", system-ui; 
+    font-size: normal;
+    font-weight: 5;
+    line-height: 100px;
+}
