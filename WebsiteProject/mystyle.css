@@ -2,7 +2,7 @@ body {
     background-color: #222222;
 }
 
-nav ul{
+#mainLinks {
     display: flex;
     list-style-type: none;
     margin: 0;
@@ -12,7 +12,7 @@ nav ul{
     border-radius: 25px;
     background-color: #ecf1ce;
     padding: 20px;
-    width: 96%;
+    width: 70%;
     height: 20px;
 }
 li a {
@@ -29,4 +29,21 @@ h1 {
     font-size: normal;
     font-weight: 5;
     line-height: 100px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+#languageLinks {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    justify-content: space-around;
+    border-radius: 25px;
+    background-color: #ecf1ce;
+    padding: 20px;
+    width: 15%;
+    height: 20px;
 }
