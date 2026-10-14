@@ -10,20 +10,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav>
-        <ul id="mainLinks">
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="products.html">Products</a></li>
-        </ul>
-
-        <ul id="languageLinks">
-            <li><a href="index.html" class="active">English</a></li>
-            <li><a href="index-fr.html">Français</a></li>
-            <li><a href="index-de.html">Deutsch</a></li>
-        </ul>
-    </nav>
+    <?php 
+        include ("commonCode.php");
+        navigationBar();
+    ?>
 
     <h1>Welcome to our webpage for used Cars</h1>
 </body>

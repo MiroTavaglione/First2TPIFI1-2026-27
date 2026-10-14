@@ -12,16 +12,16 @@
 <body>
     <nav>
         <ul id="mainLinks">
-            <li><a href="index-de.html">Startseite</a></li>
-            <li><a href="about-de.html" class="active">Über</a></li>
-            <li><a href="contact-de.html">Kontakt</a></li>
-            <li><a href="products-de.html">Produkte</a></li>
+            <li><a href="index-de.php">Startseite</a></li>
+            <li><a href="about-de.php" class="active">Über</a></li>
+            <li><a href="contact-de.php">Kontakt</a></li>
+            <li><a href="products-de.php">Produkte</a></li>
         </ul>
 
         <ul id="languageLinks">
-            <li><a href="index.html">English</a></li>
-            <li><a href="index-fr.html">Français</a></li>
-            <li><a href="index-de.html" class="active">Deutsch</a></li>
+            <li><a href="index.php">English</a></li>
+            <li><a href="index-fr.php">Français</a></li>
+            <li><a href="index-de.php" class="active">Deutsch</a></li>
         </ul>
     </nav>
 
