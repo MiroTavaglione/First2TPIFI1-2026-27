@@ -10,20 +10,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav>
-        <ul id="mainLinks">
-            <li><a href="index-de.php">Startseite</a></li>
-            <li><a href="about-de.php">Über</a></li>
-            <li><a href="contact-de.php" class="active">Kontakt</a></li>
-            <li><a href="products-de.php">Produkte</a></li>
-        </ul>
-
-        <ul id="languageLinks">
-            <li><a href="index.php">English</a></li>
-            <li><a href="index-fr.php">Français</a></li>
-            <li><a href="index-de.php" class="active">Deutsch</a></li>
-        </ul>
-    </nav>
+    <?php 
+        include ("commonCode.php");
+        navigationBar("Contact","DE");
+    ?>
 
     <h1>Wie man uns kontaktiert</h1>
 </body>

@@ -12,7 +12,7 @@
 <body>
     <?php 
         include ("commonCode.php");
-        navigationBar();
+        navigationBar("Home","EN");
     ?>
 
     <h1>Welcome to our webpage for used Cars</h1>

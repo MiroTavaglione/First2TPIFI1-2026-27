@@ -12,7 +12,7 @@
 <body>
     <?php 
         include ("commonCode.php");
-        navigationBar();
+        navigationBar("About","EN");
     ?>
 
     <h1>This is about our company</h1>

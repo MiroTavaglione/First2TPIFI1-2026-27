@@ -12,7 +12,7 @@
 <body>
     <?php 
         include ("commonCode.php");
-        navigationBar();
+        navigationBar("Contact","EN");
     ?>
 
     <h1>How to contact us</h1>

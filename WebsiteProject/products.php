@@ -13,7 +13,7 @@
 
     <?php 
         include ("commonCode.php");
-        navigationBar();
+        navigationBar("Products","EN");
     ?>
     
 

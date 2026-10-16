@@ -1,22 +1,87 @@
 <?php
-    function navigationBar()
-    {
-?>
-<nav>
-        <ul id="mainLinks">
-            <li><a href="index.php">Home</a></li>
-            <li><a href="about.php">About</a></li>
-            <li><a href="contact.php">Contact</a></li>
-            <li><a href="products.php" class="active">Products</a></li>
-        </ul>
+function navigationBar($activePage, $langauge)
+{
 
-        <ul id="languageLinks">
-            <li><a href="index.php" class="active">English</a></li>
-            <li><a href="index-fr.php">Français</a></li>
-            <li><a href="index-de.php">Deutsch</a></li>
-        </ul>
-    </nav>
-<?php
+
+
+    if ($langauge == "EN") {
+?>
+        <nav>
+            <ul id="mainLinks">
+                <li><a href="index.php" <?php if ($activePage == "Home") {
+                                            print 'class="active"';
+                                        } ?>>Home</a></li>
+                <li><a href="about.php" <?php if ($activePage == "About") {
+                                            print 'class="active"';
+                                        } ?>>About</a></li>
+                <li><a href="contact.php" <?php if ($activePage == "Contact") {
+                                                print 'class="active"';
+                                            } ?>>Contact</a></li>
+                <li><a href="products.php" <?php if ($activePage == "Products") {
+                                                print 'class="active"';
+                                            } ?>>Products</a></li>
+            </ul>
+
+            <ul id="languageLinks">
+                <li><a href="index.php" class="active">English</a></li>
+                <li><a href="index-fr.php">Français</a></li>
+                <li><a href="index-de.php">Deutsch</a></li>
+            </ul>
+        </nav>
+
+    <?php
+    }
+     if ($langauge == "FR") {
+?>
+     <nav>
+            <ul id="mainLinks">
+                <li><a href="index-fr.php" <?php if ($activePage == "Home") {
+                                            print 'class="active"';
+                                        } ?>>Accueil</a></li>
+                <li><a href="about-fr.php" <?php if ($activePage == "About") {
+                                            print 'class="active"';
+                                        } ?>>À propos</a></li>
+                <li><a href="contact-fr.php" <?php if ($activePage == "Contact") {
+                                                print 'class="active"';
+                                        } ?>>Contact</a></li>
+                <li><a href="products-fr.php" <?php if ($activePage == "Products") {
+                                                print 'class="active"';
+                                        } ?>>Produits</a></li>
+            </ul>
+
+            <ul id="languageLinks">
+                <li><a href="index.php">English</a></li>
+                <li><a href="index-fr.php" class="active">Français</a></li>
+                <li><a href="index-de.php">Deutsch</a></li>
+            </ul>
+        </nav>
+    <?php
+    }
+     if ($langauge == "DE") {
+    ?>
+     <nav>
+            <ul id="mainLinks">
+                <li><a href="index-de.php" <?php if ($activePage == "Home") {
+                                            print 'class="active"';
+                                        } ?>>Startseite</a></li>
+                <li><a href="about-de.php" <?php if ($activePage == "About") {
+                                            print 'class="active"';
+                                        } ?>>Über</a></li>
+                <li><a href="contact-de.php" <?php if ($activePage == "Contact") {
+                                                print 'class="active"';
+                                        } ?>>Kontakt</a></li>
+                <li><a href="products-de.php" <?php if ($activePage == "Products") {
+                                                print 'class="active"';
+                                        } ?>>Produkte</a></li>
+            </ul>
+
+            <ul id="languageLinks">
+                <li><a href="index.php">English</a></li>
+                <li><a href="index-fr.php">Français</a></li>
+                <li><a href="index-de.php" class="active">Deutsch</a></li>
+            </ul>
+        </nav>
+    <?php
+    }
 }
 ?>
-
