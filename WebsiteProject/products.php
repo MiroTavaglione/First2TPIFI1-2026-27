@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="mystyle.css">
-    <title>Home Page</title>
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
@@ -13,92 +13,34 @@
 
     <?php 
         include ("commonCode.php");
-        navigationBar("Products","EN");
+        navigationBar("Products","EN");        
+        $namesOfProducts = ["BMW 320d", "Mercedes C-Class", "Volkswagen Golf", "Aston Martin D89", "Ferrari F430", "Porsche 911 Carrera S (997)", "Mercedes-Benz SLR McLaren"];
+        $imagesOfProducts = ["images/BMW 320d.png", "images/Mercedes-Benz C-Class.png", "images/Volkswagen Golf 8.png", "images/Aston Martin DB9.png", "images/Ferrari F430.png", "images/Porsche 911 Carrera S (997).png", "images/Mercedes-Benz SLR McLaren.png"];
+        $pricesOfProducts = ["24,500€", "29,900€", "19,200€", "39,900€", "89,00€", "42,00€", "289,00€"];
+        $yearsOfProducts = ["2021", "2022", "2022", "2005", "2006", "2007", "2004"];
+        $mileagesOfProducts = [68.500, 37.890, 42.500, 59.800, 48.000, 42.500, 31.100];
+        $fuelsOfProducts = ["Diesel", "Diesel", "Petrol", "5.9L V12", "4.3L V8", "3.8L Flat-six", "Supercharged V8"];
+        $gearboxesOfProducts = ["Automatic", "Automatic", "Automatic", "Automatic", "Automatic", "Manual", "Automatic"];
     ?>
     
 
     <div class="AllItems">
 
     <?php
-    for($i=0; $i<3; $i++) {
+    for($i=0; $i < count($namesOfProducts); $i++) {
     ?>
         <div class="oneItem">
-            <div>BMW 320d</div>
-            <img src="images/BMW 320d.png" alt="Car 1">
-            <div>Cost:  24,500€</div>
-            <div>Year:  2021</div>
-            <div>Mileage:  68,500 km</div>
-            <div>Fuel:  Diesel</div>
-            <div>Gearbox:  Automatic</div>
+            <div><?= $namesOfProducts[$i]; ?></div>
+            <img src="<?= $imagesOfProducts[$i] ?>" alt="$namesOfProducts[$i]">
+            <div>Cost:  €<?= $pricesOfProducts[$i] ?></div>
+            <div>Year:  <?= $yearsOfProducts[$i] ?></div>
+            <div>Mileage:  <?= $mileagesOfProducts[$i] ?></div>
+            <div>Fuel:  <?= $fuelsOfProducts[$i] ?></div>
+            <div>Gearbox:  <?= $gearboxesOfProducts[$i] ?></div>
         </div>
     <?php
     }
-         ?>
-
-
-        
-
-        <div class="oneItem">
-            <div>Mercedes C-Class</div>
-            <img src="images/Mercedes-Benz C-Class.png" alt="Car 2">
-            <div>Cost:  29,900€</div>
-            <div>Year:  2022</div>
-            <div>Mileage:  37,890 km</div>
-            <div>Fuel:  Diesel</div>
-            <div>Gearbox:  Automatic</div>
-        </div>
-
-        <div class="oneItem">
-            <div>Volkswagen Golf</div>
-            <img src="images/Volkswagen Golf 8.png" alt="Car 3">
-            <div>Cost:  19,200€</div>
-            <div>Year:  2022</div>
-            <div>Mileage:  42,500 km</div>
-            <div>Fuel:  Petrol</div>
-            <div>Gearbox:  Automatic</div>
-        </div>
-
-        <div class="oneItem">
-            <div>Aston Martin D89</div>
-            <img src="images/Aston Martin DB9.png" alt="Car 3">
-            <div>Cost:  39,900€</div>
-            <div>Year:  2005</div>
-            <div>Mileage:  59,800 km</div>
-            <div>Engine:  5.9L V12</div>
-            <div>Gearbox:  Automatic</div>
-        </div>
-
-        <div class="oneItem">
-            <div>Ferrari F430</div>
-            <img src="images/Ferrari F430.png" alt="Car 3">
-            <div>Cost:  89,00€</div>
-            <div>Year:  2006</div>
-            <div>Mileage:  48,000 km</div>
-            <div>Engine:  4.3L V8</div>
-            <div>Gearbox:  Automatic</div>
-        </div>
-
-        <div class="oneItem">
-            <div>Porsche 911 Carrera S (997)</div>
-            <img src="images/Porsche 911 Carrera S (997).png" alt="Car 3">
-            <div>Cost:  42,00€</div>
-            <div>Year:  2007</div>
-            <div>Mileage:  42,500 km</div>
-            <div>Engine:  3.8L Flat-six</div>
-            <div>Gearbox:  Manual</div>
-        </div>
-
-        <div class="oneItem">
-            <div>Mercedes-Benz SLR McLaren</div>
-            <img src="images/Mercedes-Benz SLR McLaren.png" alt="Car 3">
-            <div>Cost:  289,00€</div>
-            <div>Year:  2004</div>
-            <div>Mileage:  31,100 km</div>
-            <div>Engine:  Supercharged V8</div>
-            <div>Gearbox:  Automatic</div>
-        </div>
-
+    ?>
     </div>
-    
 </body>
 </html>

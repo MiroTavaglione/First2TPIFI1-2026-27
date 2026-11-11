@@ -3,7 +3,6 @@ function navigationBar($activePage, $langauge)
 {
 
 
-
     if ($langauge == "EN") {
 ?>
         <nav>

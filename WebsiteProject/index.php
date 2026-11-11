@@ -15,6 +15,6 @@
         navigationBar("Home","EN");
     ?>
 
-    <h1>Welcome to our webpage for used Cars</h1>
+    <h1>Used Cars for SALE!</h1>
 </body>
 </html>
