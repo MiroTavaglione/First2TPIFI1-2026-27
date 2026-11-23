@@ -13,10 +13,10 @@
 
     <?php 
         include ("commonCode.php");
-        navigationBar("Contact","EN");
+        navigationBar("Contact",$lang);
     ?>
 
-    <h1>Contact us!</h1>
+    <h1><?= $translations["HomePageContact"] ?></h1>
     <?php 
     if (isset($_POST["username"])) {
             print "Hello, " . $_POST["username"];
@@ -25,11 +25,11 @@
     {        
     ?>
     <form method="POST">
-        Please type your name here: <input type="text" name="username">
+        <?= $translations["ContactPageAskName"] ?> <input type="text" name="username">
         <br>
-        Please type your password here: <input type="password" name="psw">
+        <?= $translations["ContactPageAskPassword"] ?> <input type="password" name="psw">
         <br>
-        <button type="submit">Submit</button>
+        <button type="submit"><?= $translations["ContactPageSubmitBtn"] ?></button>
     </form>
     <?php
     }

@@ -12,9 +12,9 @@
 <body>
     <?php 
         include ("commonCode.php");
-        navigationBar("Home","EN");
+        navigationBar("Home",$lang);
     ?>
 
-    <h1>Used Cars for SALE!</h1>
+    <h1><?= $translations["HomepageWelcome"] ?></h1>
 </body>
 </html>

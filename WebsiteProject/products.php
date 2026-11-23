@@ -13,7 +13,7 @@
 
     <?php 
         include ("commonCode.php");
-        navigationBar("Products","EN");        
+        navigationBar("Products",$lang);        
         $namesOfProducts = ["BMW 320d", "Mercedes C-Class", "Volkswagen Golf", "Aston Martin D89", "Ferrari F430", "Porsche 911 Carrera S (997)", "Mercedes-Benz SLR McLaren"];
         $imagesOfProducts = ["images/BMW 320d.png", "images/Mercedes-Benz C-Class.png", "images/Volkswagen Golf 8.png", "images/Aston Martin DB9.png", "images/Ferrari F430.png", "images/Porsche 911 Carrera S (997).png", "images/Mercedes-Benz SLR McLaren.png"];
         $pricesOfProducts = ["24,500€", "29,900€", "19,200€", "39,900€", "89,00€", "42,00€", "289,00€"];
@@ -32,11 +32,11 @@
         <div class="oneItem">
             <div><?= $namesOfProducts[$i]; ?></div>
             <img src="<?= $imagesOfProducts[$i] ?>" alt="$namesOfProducts[$i]">
-            <div>Cost:  €<?= $pricesOfProducts[$i] ?></div>
-            <div>Year:  <?= $yearsOfProducts[$i] ?></div>
-            <div>Mileage:  <?= $mileagesOfProducts[$i] ?></div>
-            <div>Fuel:  <?= $fuelsOfProducts[$i] ?></div>
-            <div>Gearbox:  <?= $gearboxesOfProducts[$i] ?></div>
+            <div><?= $translations["ProductsPageCost"] ?>  €<?= $pricesOfProducts[$i] ?></div>
+            <div><?= $translations["ProductPageYear"] ?>  <?= $yearsOfProducts[$i] ?></div>
+            <div><?= $translations["ProductPageMileage"] ?>  <?= $mileagesOfProducts[$i] ?></div>
+            <div><?= $translations["ProductPageFuel"] ?>  <?= $fuelsOfProducts[$i] ?></div>
+            <div><?= $translations["ProductPageGearbox"] ?>  <?= $gearboxesOfProducts[$i] ?></div>
         </div>
     <?php
     }

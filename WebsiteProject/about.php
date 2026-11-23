@@ -12,9 +12,9 @@
 <body>
     <?php 
         include ("commonCode.php");
-        navigationBar("About","EN");
+        navigationBar("About",$lang);
     ?>
 
-    <h1>This is about our company</h1>
+    <h1><?= $translations["AboutPageTitle"] ?></h1>
 </body>
 </html>
