@@ -1,0 +1,16 @@
+﻿StringID;StringEN;StringDE;StringFR
+HomePageWelcome;Used Cars for SALE!;Gebrauchtwagen zu VERKAUF!;Voiture d'occasion à VENDRE !
+AboutPageMainText;This is about our company;Das geht um unsere Firma;C'est à propos de notre entreprise
+HomeBtn;Home;Startseite;Page d'accueil
+AboutBtn;About;Über;À propos
+ContactBtn;Contact;Kontakt;Contact
+ProductsBtn;Products;Produkte;Produits
+ContactPageAskName;Please type in your name:;Bitte gib deinen Namen ein:;Veuillez entrer votre nom :
+ContactPageAskBtn;Please type your password:;Bitte gib dein Passwort ein:;Veuillez entrer votre mot de passe :
+ContactPageSubmitBtn;Submit;Absenden;Envoyer
+ProductsPageCost;Cost:;Kosten:;Coûts :
+ProductPageYear;Year:;Jahr:;Année :
+ProductPageMileage;Mileage:;Kilometerstand:;Kilométrage :
+ProductPageFuel;Fuel:;Kraftstoff:;Carburant :
+ProductPageGearbox;Gearbox:;Getriebe:;Boîte de vitesses :
+HomePageContact;Contact us!;Kontaktiere uns!;Contacte-nous!

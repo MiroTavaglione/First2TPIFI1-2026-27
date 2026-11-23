@@ -16,7 +16,7 @@
         navigationBar("Contact","EN");
     ?>
 
-    <h1>Please type in your name</h1>
+    <h1>Contact us!</h1>
     <?php 
     if (isset($_POST["username"])) {
             print "Hello, " . $_POST["username"];
