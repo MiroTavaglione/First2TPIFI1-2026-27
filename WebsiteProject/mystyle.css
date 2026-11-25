@@ -3,17 +3,13 @@ body {
 }
 
 #mainLinks {
-    display: flex;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    justify-content: space-around;
-    border-radius: 25px;
-    background-color: #ecf1ce;
-    padding: 20px;
-    width: 70%;
-    height: 20px;
+    width: 15%;
+}
+#userLinks {
+    width: 10%;
+}
+#languageLinks {
+    width: 10%;
 }
 
 li a {
@@ -43,7 +39,7 @@ nav{
     justify-content: space-between;
 }
 
-#languageLinks {
+#nav ul {
     display: flex;
     list-style-type: none;
     margin: 0;

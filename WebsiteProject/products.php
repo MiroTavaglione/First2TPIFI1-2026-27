@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="mystyle.css">
+    <link rel="stylesheet" href="mystyle.css?<?= time() ?>">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,13 +30,13 @@
     for($i=0; $i < count($namesOfProducts); $i++) {
     ?>
         <div class="oneItem">
-            <div><?= $namesOfProducts[$i]; ?></div>
+            <div><?= $namesOfProducts[$i] ?></div>
             <img src="<?= $imagesOfProducts[$i] ?>" alt="$namesOfProducts[$i]">
-            <div><?= $translations["ProductsPageCost"] ?>  €<?= $pricesOfProducts[$i] ?></div>
-            <div><?= $translations["ProductPageYear"] ?>  <?= $yearsOfProducts[$i] ?></div>
-            <div><?= $translations["ProductPageMileage"] ?>  <?= $mileagesOfProducts[$i] ?></div>
-            <div><?= $translations["ProductPageFuel"] ?>  <?= $fuelsOfProducts[$i] ?></div>
-            <div><?= $translations["ProductPageGearbox"] ?>  <?= $gearboxesOfProducts[$i] ?></div>
+            <div><?= $translations["ProductsPageCost"] ?>  $<?= $pricesOfProducts[$i] ?></div>
+            <div><?= $translations["ProductsPageYear"] ?>  <?= $yearsOfProducts[$i] ?></div>
+            <div><?= $translations["ProductsPageMileage"] ?>  <?= $mileagesOfProducts[$i] ?></div>
+            <div><?= $translations["ProductsPageFuel"] ?>  <?= $fuelsOfProducts[$i] ?></div>
+            <div><?= $translations["ProductsPageGearbox"] ?>  <?= $gearboxesOfProducts[$i] ?></div>
         </div>
     <?php
     }
